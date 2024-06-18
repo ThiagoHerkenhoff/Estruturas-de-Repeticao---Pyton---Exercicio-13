@@ -1,0 +1,12 @@
+# - 13 - Faça um programa que leia um número inteiro positivo par 'N' e imprima todos os números pares de '0'
+# até 'N' em ordem crescente.
+
+num = int(input("Informe um número inteiro positivo par: "))
+
+if num < 0 or num % 2 != 0:
+    print("Número inválido, favor informar um número inteiro positivo par")
+
+else:
+    print(f'Os números naturais inteiros par de 0 até {num} são: ')
+    for i in range(0, num + 1, 2):
+        print(i)
